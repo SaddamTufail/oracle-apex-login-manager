@@ -9,7 +9,7 @@ but works on any page with a username + password (and optional workspace) field.
 1. Unzip this folder somewhere permanent (don't delete it after installing — Chrome loads it live from disk).
 2. Open `chrome://extensions` in Chrome.
 3. Turn on **Developer mode** (top-right toggle).
-4. Click **Load unpacked** and select the unzipped `apex-login-manager` folder.
+4. Click **Load unpacked** and select the unzipped `oracle-apex-login-manager` folder.
 5. Pin the extension (puzzle-piece icon → pin) so it's easy to reach.
 6. **Reload any APEX login tabs already open** — a fresh install only injects into new page loads.
 
