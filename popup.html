@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>APEX Login Manager</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="header">
+    <img src="icons/icon48.png" width="22" height="22" alt="" />
+    <div>
+      <div class="title">APEX Workspace Logins</div>
+      <div class="host" id="host-label">—</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Saved for this page</div>
+    <div id="cred-list" class="cred-list"><div class="empty">No logins saved for this page yet.</div></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Add / Save login</div>
+    <label>Label (optional)<input type="text" id="f-label" placeholder="e.g. Prod - DEV workspace" /></label>
+    <label>Workspace<input type="text" id="f-workspace" placeholder="Workspace name (if applicable)" /></label>
+    <label>Username<input type="text" id="f-username" placeholder="Username" /></label>
+    <label>Password<input type="password" id="f-password" placeholder="Password" /></label>
+    <div class="row">
+      <button id="btn-capture" class="secondary">Capture from page</button>
+      <button id="btn-save">Save</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title toggle" id="mapping-toggle">Field mapping (advanced) ▾</div>
+    <div id="mapping-body" class="hidden">
+      <p class="hint">If autofill isn't finding the right boxes, click a button below, then click the matching field on the page.</p>
+      <div class="map-row"><span>Workspace</span><code id="map-workspace">not set</code><button data-kind="workspace" class="pick">Pick</button></div>
+      <div class="map-row"><span>Username</span><code id="map-username">not set</code><button data-kind="username" class="pick">Pick</button></div>
+      <div class="map-row"><span>Password</span><code id="map-password">not set</code><button data-kind="password" class="pick">Pick</button></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title toggle" id="all-toggle">All saved logins ▾</div>
+    <div id="all-list" class="cred-list hidden"></div>
+  </div>
+
+  <p class="footer-note">Stored locally in this browser only (chrome.storage.local), not encrypted or synced anywhere.</p>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+#awlm-root {
+  all: initial;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 2147483647;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+#awlm-root .awlm-card {
+  background: #1f2430;
+  color: #f1f3f8;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  padding: 12px 14px;
+  width: 260px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+#awlm-root .awlm-title {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#awlm-root .awlm-title .awlm-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #c42d27;
+  display: inline-block;
+}
+
+#awlm-root .awlm-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12.5px;
+  margin-bottom: 4px;
+  background: rgba(255,255,255,0.04);
+}
+
+#awlm-root .awlm-item:hover {
+  background: rgba(196,45,39,0.25);
+}
+
+#awlm-root .awlm-item .awlm-label {
+  font-weight: 600;
+}
+
+#awlm-root .awlm-item .awlm-sub {
+  opacity: 0.65;
+  font-size: 11px;
+}
+
+#awlm-root .awlm-close {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  font-size: 13px;
+  margin-left: auto;
+}
+
+#awlm-root .awlm-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+#awlm-root button.awlm-btn {
+  flex: 1;
+  background: #c42d27;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#awlm-root button.awlm-btn.awlm-secondary {
+  background: rgba(255,255,255,0.08);
+  color: #f1f3f8;
+}
+
+#awlm-pick-highlight {
+  outline: 2px solid #c42d27 !important;
+  outline-offset: 1px !important;
+  cursor: crosshair !important;
+}

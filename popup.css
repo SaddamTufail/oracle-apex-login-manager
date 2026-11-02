@@ -1,0 +1,128 @@
+* { box-sizing: border-box; }
+body {
+  width: 320px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #181c24;
+  color: #eef0f5;
+  font-size: 13px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.header .title { font-weight: 700; font-size: 13.5px; }
+.header .host { font-size: 11px; opacity: 0.6; word-break: break-all; }
+
+.section {
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.section-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.55;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.section-title.toggle { cursor: pointer; }
+
+label {
+  display: block;
+  font-size: 11px;
+  opacity: 0.75;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  margin-top: 4px;
+  padding: 7px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: #10141b;
+  color: #eef0f5;
+  font-size: 12.5px;
+}
+
+input:focus { outline: none; border-color: #c42d27; }
+
+.row { display: flex; gap: 8px; margin-top: 4px; }
+
+button {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: none;
+  background: #c42d27;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: rgba(255,255,255,0.08);
+  color: #eef0f5;
+}
+
+button:hover { filter: brightness(1.08); }
+
+.cred-list { display: flex; flex-direction: column; gap: 6px; }
+
+.cred-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.04);
+  padding: 8px 9px;
+  border-radius: 7px;
+}
+
+.cred-item .meta .label { font-weight: 700; font-size: 12.5px; }
+.cred-item .meta .sub { font-size: 10.5px; opacity: 0.6; }
+.cred-item .actions { display: flex; gap: 6px; }
+.cred-item .actions button { flex: none; padding: 4px 8px; font-size: 11px; }
+.cred-item .actions button.danger { background: transparent; color: #ff8b85; border: 1px solid rgba(255,139,133,0.4); }
+
+.empty { opacity: 0.5; font-size: 12px; padding: 4px 0; }
+
+.hidden { display: none; }
+
+.hint { font-size: 11px; opacity: 0.6; margin: 0 0 8px; }
+
+.map-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+  font-size: 11.5px;
+}
+
+.map-row span { width: 66px; opacity: 0.7; }
+.map-row code {
+  flex: 1;
+  background: #10141b;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 10.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.map-row button { flex: none; padding: 4px 8px; font-size: 11px; }
+
+.footer-note {
+  font-size: 10px;
+  opacity: 0.45;
+  padding: 10px 14px;
+  margin: 0;
+}
